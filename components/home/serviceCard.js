@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { View, Text, Image, StyleSheet } from 'react-native'
-import IconFa5 from 'react-native-vector-icons/FontAwesome5';
-import Icon from 'react-native-vector-icons/MaterialIcons'
+import IconFa5 from '@expo/vector-icons/FontAwesome5';
+import Icon from '@expo/vector-icons/MaterialIcons'
 import { Animated } from 'react-native';
 import { TouchableOpacity } from 'react-native';
 import Login from '../../pages/login';

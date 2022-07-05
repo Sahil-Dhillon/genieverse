@@ -1,9 +1,9 @@
 import Axios from "axios";
 import { SERVICES_CREATE_FAIL, SERVICES_CREATE_REQUEST, SERVICES_CREATE_SUCCESS, SERVICES_DETAILS_FAIL, SERVICES_DETAILS_REQUEST, SERVICES_DETAILS_SUCCESS, SERVICES_GROUP_CREATE_FAIL, SERVICES_GROUP_CREATE_REQUEST, SERVICES_GROUP_CREATE_SUCCESS, SERVICES_LIST_FAIL, SERVICES_LIST_REQUEST, SERVICES_LIST_SUCCESS } from "../constants/servicesConstants"
+import { BACKEND_URL } from '@env';
 
 
-
-const BACKEND_URL = 'https://geenieverse.herokuapp.com'
+// const BACKEND_URL = 'https://geenieverse.herokuapp.com'
 export const listServices = () => async (dispatch) => {
     dispatch({
         type: SERVICES_LIST_REQUEST

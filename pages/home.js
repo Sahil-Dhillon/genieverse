@@ -8,7 +8,7 @@ import ServiceCard from '../components/home/serviceCard'
 import LoadingScreen from '../components/loading'
 import { listServices } from '../store/actions/servicesAction'
 import { signout } from '../store/actions/userActions'
-import Icon from 'react-native-vector-icons/MaterialIcons'
+import Icon from '@expo/vector-icons/MaterialIcons'
 
 export default function HomeScreen({ navigation }) {
     // let userData = AsyncStorage.getItem('userInfo') ? AsyncStorage.getItem('userInfo').name : "Logged out"

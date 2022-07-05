@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import HomeScreen from './pages/home'
 import Service from './pages/service'
 import TimeAndPlace from './pages/order/timeAndPlace'
+import Payment from './pages/order/payment'
 const Stack = createStackNavigator()
 const MainStack = () => {
     return (
@@ -13,6 +14,7 @@ const MainStack = () => {
                 <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
                 <Stack.Screen name="Service" component={Service} options={({ route }) => ({ title: route.params.s_title, headerTintColor: '#000022' })} />
                 <Stack.Screen name="TimeAndPlace" component={TimeAndPlace} options={({ route }) => ({ title: route.params.s_title, headerTintColor: '#000022' })} />
+                <Stack.Screen name="Payment" component={Payment} />
             </Stack.Navigator>
         </NavigationContainer>
     )
